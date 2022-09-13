@@ -21,7 +21,8 @@
     "build": "tsdx build",
     "start": "tsdx watch",
     "test": "tsdx test",
-    "prepublishOnly": "tsdx build"
+    "prepublishOnly": "tsdx build", 
+    "postinstall": "cd ./node_modules/@uniswap/v3-sdk && npm install && tsdx build"
   },
   "dependencies": {
     "@ethersproject/abi": "^5.0.12",
