@@ -26,6 +26,8 @@ export abstract class TickList {
     )
 
     // ensure tick liquidity deltas sum to 0
+    // ?! 
+    /*
     invariant(
       JSBI.equal(
         ticks.reduce((accumulator, { liquidityNet }) => JSBI.add(accumulator, liquidityNet), ZERO),
@@ -33,7 +35,7 @@ export abstract class TickList {
       ),
       'ZERO_NET'
     )
-
+    */
     invariant(isSorted(ticks, tickComparator), 'SORTED')
   }
 
