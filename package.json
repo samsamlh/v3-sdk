@@ -21,8 +21,7 @@
     "build": "tsdx build",
     "start": "tsdx watch",
     "test": "tsdx test",
-    "postinstall": "tsc --outDir ./build",
-    "prepublishOnly": "tsdx build"
+    "prepare": "tsdx build"
   },
   "dependencies": {
     "@ethersproject/abi": "^5.0.12",
